@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: auto;
+}
+
+.Contentwrapper {
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image {
+  flex: 1;
+  width: 100%;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.TextSection {
+  flex: 1;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.TextSection span {
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #00715d;
+}
+
+.TextSection h2 {
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
+  color: #283734;
+}
+
+.TextSection p {
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.1rem;
+  color: #6f7775;
+}
+
+.line {
+  display: flex;
+  gap: 1rem;
+}
+
+.line .Icon {
+  font-size: 1.1rem;
+  font-weight: 900;
+  background-color: #fbd45a;
+  border-radius: 50%;
+  color: white;
+  padding: 0.3%;
+  margin-top: 0.3rem;
+}
+
+.line p {
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2rem;
+  color: #283734;
+}
+
+.button {
+  background: linear-gradient(to bottom, #283734 49%, #fbd45a 49%);
+  background-size: 100% 200%;
+  background-position: 0 100%;
+  color: black;
+  border: none;
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+  transition: background-position 0.5s ease;
+  border-radius: 60px;
+  width: 35%;
+  max-width: 300px;
+  box-sizing: border-box;
+  margin: 5% 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.05rem;
+}
+
+.button:hover {
+  background-position: 100% 0;
+  color: white;
+}
+
+/*!   STYLING FOR BUTTON  */
+
+@media (max-width: 1200px) and (min-width: 754px) {
+  .button {
+    font-size: 1rem;
+    width: 26vw;
+    font-weight: 700;
+    padding: 1.3rem 2rem;
+  }
+}
+@media (max-width: 753px) and (min-width: 572px) {
+  .button {
+    font-size: 0.8rem;
+    width: 27vw;
+    font-weight: 700;
+    padding: 1.1rem 1.5rem;
+  }
+}
+
+@media (max-width: 571px) and (min-width: 453px) {
+  .button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 33vw;
+    padding: 1rem 1.4rem;
+  }
+}
+
+@media (max-width: 452px) and (min-width: 391px) {
+  .button {
+    font-size: 0.6rem;
+    font-weight: 700;
+    width: 31vw;
+    padding: 0.8rem 1.3rem;
+  }
+}
+@media (max-width: 390px) and (min-width: 348px) {
+  .button {
+    font-size: 0.5rem;
+    font-weight: 700;
+    width: 30vw;
+    padding: 0.7rem 1.2rem;
+  }
+}
+@media (max-width: 347px) and (min-width: 305px) {
+  .button {
+    font-size: 0.4rem;
+    font-weight: 700;
+    width: 30vw;
+    padding: 0.6rem 1rem;
+  }
+}
+@media (max-width: 304px) {
+  .button {
+    font-size: 0.35rem;
+    font-weight: 700;
+    width: 33vw;
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    padding: 2% 5%;
+  }
+  .TextSection {
+    justify-content: center;
+    border: 1px solid blue;
+    padding: 2% 7%;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 639px) {
+  .TextSection span {
+    font-size: 1.3rem;
+  }
+
+  .TextSection h2 {
+    font-size: 2.5rem;
+  }
+
+  .TextSection p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 638px) and (min-width: 513px) {
+  .TextSection span {
+    font-size: 1.2rem;
+  }
+
+  .TextSection h2 {
+    font-size: 2rem;
+  }
+
+  .TextSection p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 512px) and (min-width: 387px) {
+  .TextSection span {
+    font-size: 1.1rem;
+  }
+
+  .TextSection h2 {
+    font-size: 1.5rem;
+  }
+
+  .TextSection p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 386px) and (min-width: 280px) {
+  .TextSection span {
+    font-size: 1rem;
+  }
+
+  .TextSection h2 {
+    font-size: 1.1rem;
+  }
+
+  .TextSection p {
+    font-size: 0.6rem;
+  }
+}

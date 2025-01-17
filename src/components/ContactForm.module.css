@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: auto;
+  background-color: #f9f4e8;
+}
+
+.ContentWrapper {
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 5% 0;
+}
+
+.Container span {
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-style: normal;
+  color: #00715d;
+  text-align: center;
+}
+
+.Container h2 {
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 2% auto;
+}
+
+@media screen and (min-width: 1700px) {
+  form {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2% auto;
+  }
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: "Nunito", serif;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/*! STYLING FOR FORM  */
+
+@media (max-width: 1200px) and (min-width: 641px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  form {
+    padding: 0 5%;
+    margin: 2% auto;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 466px) {
+  .Container span {
+    font-size: 1.3rem;
+  }
+
+  .Container h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 465px) and (min-width: 351px) {
+  .Container span {
+    font-size: 1rem;
+  }
+
+  .Container h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .Container span {
+    font-size: 0.9rem;
+  }
+
+  .Container h2 {
+    font-size: 1.8rem;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.button {
+  background: linear-gradient(to bottom, #283734 49%, #fbd45a 49%);
+  background-size: 100% 200%;
+  background-position: 0 100%;
+  color: black;
+  border: none;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: background-position 0.5s ease;
+  border-radius: 60px;
+  width: 35%;
+  max-width: 300px;
+  box-sizing: border-box;
+  margin: 5% 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-position: 100% 0;
+  color: white;
+}
+
+/*! STYLING FOR BUTTON  */
+
+@media (max-width: 1200px) and (min-width: 840px) {
+  .button {
+    font-size: 1rem;
+    width: 24vw;
+    font-weight: 700;
+    padding: 1.3rem 2rem;
+  }
+}
+@media (max-width: 839px) and (min-width: 572px) {
+  .button {
+    font-size: 0.9rem;
+    width: 30vw;
+    font-weight: 700;
+    padding: 1.1rem 1.5rem;
+  }
+}
+
+@media (max-width: 571px) and (min-width: 453px) {
+  .button {
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 35vw;
+    padding: 1rem 1.4rem;
+  }
+}
+
+@media (max-width: 452px) and (min-width: 391px) {
+  .button {
+    font-size: 0.6rem;
+    font-weight: 700;
+    width: 32vw;
+    padding: 0.8rem 1.3rem;
+  }
+}
+@media (max-width: 390px) and (min-width: 348px) {
+  .button {
+    font-size: 0.5rem;
+    font-weight: 700;
+    width: 31vw;
+    padding: 0.7rem 1.2rem;
+  }
+}
+@media (max-width: 347px) and (min-width: 305px) {
+  .button {
+    font-size: 0.4rem;
+    font-weight: 700;
+    width: 30vw;
+    padding: 0.6rem 1rem;
+  }
+}
+@media (max-width: 304px) {
+  .button {
+    font-size: 0.35rem;
+    font-weight: 700;
+    width: 30vw;
+    padding: 0.5rem 0.8rem;
+  }
+}

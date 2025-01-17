@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Main {
+  width: 100%;
+  height: auto;
+  margin: 5% 0;
+}
+
+.ContentWrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 2% 3.5%;
+  height: auto;
+}
+
+.Container {
+  background: linear-gradient(rgba(0, 113, 93, 0.85), rgba(0, 113, 93, 0.85)),
+    url("/images/infoSectionimg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: fit-content;
+  border-radius: 20px;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 0 5%;
+  gap: 3%;
+}
+
+@media screen and (min-width: 1921px) {
+  .ContentWrapper {
+    padding: 2%;
+  }
+}
+
+.Container > * {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  margin: 20% 0;
+}
+
+.ul {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  text-align: center;
+}
+
+.ul span {
+  color: white;
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3.5rem;
+
+  line-height: 4rem;
+}
+
+.ul ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ul li {
+  color: #89d3c6;
+  font-size: 1.2rem;
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+}
+
+.ul li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #fbd45a;
+  transition: width 0.3s ease-in-out;
+}
+
+.ul:hover li::after,
+.ul li:hover::after {
+  width: 100%;
+}
+
+.ul li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  right: 0;
+  background-color: #fbd45a;
+  transition: width 0.3s ease-in-out;
+}
+
+.ul:hover li::before,
+.ul li:hover::before {
+  width: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .Container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 0;
+    padding: 2rem 5%;
+    height: fit-content;
+  }
+
+  .ul {
+    margin: 3% 0;
+    padding: 0;
+  }
+
+  .ul span {
+    font-size: 3rem;
+  }
+
+  .ul li {
+    font-size: 1.1rem;
+  }
+}

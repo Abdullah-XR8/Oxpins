@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: auto;
+}
+
+.contentwrapper {
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Container {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  height: auto;
+  padding: 3% 5%;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.Details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.Icon {
+  font-size: 3rem;
+  background-color: #fbd45a;
+  padding: 4%;
+  border-radius: 50%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2%;
+  width: 20vw;
+  gap: 0.3rem;
+}
+
+.text span {
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #6f7775;
+}
+
+.text p {
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  color: #283734;
+}
+
+@media screen and (max-width: 990px) {
+  .Container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: 1px solid black;
+    align-items: start;
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .text span {
+    font-size: 0.8rem;
+  }
+
+  .text p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .text span {
+    font-size: 0.7rem;
+  }
+
+  .text p {
+    font-size: 0.8rem;
+  }
+}

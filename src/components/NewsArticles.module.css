@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+
+  padding: 2% 3.5%;
+}
+
+.ContentWrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  line-height: 3rem;
+}
+
+.container .textSection span {
+  font-family: "Cedarville Cursive", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: #00715d;
+}
+
+.container .textSection h2 {
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3.2rem;
+  color: #283734;
+  text-align: center;
+  margin: 0;
+}
+
+.CardContainer {
+  margin: 4% 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: auto;
+  gap: 1rem;
+}
+
+.CardContainer .card {
+  width: 100%;
+  height: auto;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .imagecontainer {
+  overflow: hidden;
+}
+
+.card .imagecontainer img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+.card:hover .imagecontainer img {
+  transform: scale(1.2) rotate(5deg);
+  filter: brightness(0.8);
+}
+
+.cardTextsection {
+  margin: 5% 0;
+}
+
+.ulcontainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+
+.ulcontainer ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.ulcontainer ul li {
+  font-size: 0.9rem;
+  color: #6f7775;
+  gap: 0.3rem;
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  transition: color 0.2s ease-in;
+}
+
+.ulcontainer ul li:hover {
+  color: #00715d;
+  cursor: pointer;
+}
+
+.card h3 {
+  margin-left: 1.4rem;
+  margin-top: 1rem;
+}
+
+.card h3 a {
+  text-decoration: none;
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1.6rem;
+  color: #283734;
+  transition: color 0.2s ease-in;
+}
+.card h3 a:hover {
+  color: #00715d;
+}
+
+.ButtomCard {
+  margin-left: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  width: 84%;
+  margin: 10% 0 0 1.4rem;
+}
+
+.ButtomCard p a {
+  text-decoration: none;
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  color: #283734;
+  transition: color 0.3s ease-in;
+}
+
+.ButtomCard p a:hover {
+  color: #00715d;
+}
+
+.ButtomCard .Icon {
+  transition: color 0.3s ease-in;
+}
+
+.ButtomCard .Icon:hover {
+  color: #00715d;
+}
+
+@media screen and (max-width: 990px) {
+  .CardContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .ButtomCard {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 606px) and (max-width: 645px) {
+  .container .textSection h2 {
+    font-size: 3rem;
+  }
+
+  .container .textSection span {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 506px) and (max-width: 605px) {
+  .container .textSection h2 {
+    font-size: 2.5rem;
+  }
+
+  .container .textSection span {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 406px) and (max-width: 505px) {
+  .container .textSection h2 {
+    font-size: 2rem;
+  }
+
+  .container .textSection span {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 306px) and (max-width: 405px) {
+  .container .textSection h2 {
+    font-size: 1.8rem;
+  }
+
+  .container .textSection span {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 305px) {
+  .container .textSection h2 {
+    font-size: 1.5rem;
+  }
+
+  .container .textSection span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .ContentWrapper {
+    padding: 0 3rem;
+  }
+}

@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 300px;
+  max-width: 350px;
+  background-color: #0b3d3d;
+  color: white;
+  height: 100vh;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  z-index: 100;
+}
+
+.sidebarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4% 2%;
+}
+
+.logo {
+  width: 50%;
+  height: auto;
+}
+
+.closebtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 2%;
+}
+
+.contactInfo {
+  margin: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contactInfo .details {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.5rem;
+  margin: 0;
+  flex-wrap: wrap;
+  height: 3vh;
+}
+
+.details span .Icon {
+  font-size: 1rem;
+}
+
+.contactInfo p {
+  font-size: 1rem;
+  width: 80%;
+}
+
+.SocialIcons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.SocialIcons span {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 1% 2.4%;
+  gap: 8%;
+  margin-left: 2%;
+}
+
+.navbar ul > * {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: white;
+  padding-top: 2%;
+  border-bottom: 0.1px solid rgb(255, 255, 255, 0.2);
+  padding-bottom: 2%;
+}
+
+.navbar ul li > * {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: white;
+  padding-top: 2%;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar .dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #093a3a;
+  color: #585f5d;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+  padding: 2%;
+  z-index: 1;
+  width: 15vw;
+  border-radius: 5px;
+  height: auto;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  top: 120%;
+  left: 30%;
+  right: 0;
+
+  opacity: 1;
+  transform: translateY(-10px);
+  transition: opacity 1s ease, transform 1s ease;
+
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1vw;
+  color: black;
+  list-style-type: none;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.dropdownContent li a {
+  display: block;
+  padding: 5px 10px;
+  white-space: nowrap;
+  color: white;
+}
+
+.dropdownContent li a:hover {
+  background-color: #f0f0f0;
+  color: black;
+  width: 100vw;
+}
+
+@media only screen and (min-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar ul > * {
+    font-size: 0.8rem;
+    color: #d2e2e2;
+  }
+
+  .navbar ul li > * {
+    font-size: 0.8rem;
+    color: #95e2e2;
+  }
+
+  .details span .Icon {
+    font-size: 0.9rem;
+  }
+
+  .contactInfo p {
+    font-size: 0.8rem;
+  }
+}
