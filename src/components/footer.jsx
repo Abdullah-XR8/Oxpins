@@ -17,7 +17,7 @@ const Footer = () => {
           <div className={styling.contentWrapper}>
             <div className={styling.column}>
               <div className={styling.image}>
-                <img src="/images/footer-logo.webp" alt="logo-img" />
+                <img src="/images/kaltech white svg.svg" alt="logo-img" />
               </div>
 
               <p className={styling.text}>

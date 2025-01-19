@@ -58,6 +58,11 @@ Footer {
   z-index: 2;
 }
 
+.contentWrapper .column .image {
+  width: 55%;
+  height: auto;
+}
+
 .text {
   margin-top: 7%;
   font-family: "manrope", sans-serif;

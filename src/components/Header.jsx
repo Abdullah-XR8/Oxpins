@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { useState } from "react";
 import Sidebar from "./Sidebar";
+// import KaltechLogo from "./KaltechLogo";
 
 const Header = () => {
   const [isSidebarVisible, setSidebarVisible] = useState(false);
@@ -24,7 +25,8 @@ const Header = () => {
     <>
       <header>
         <div className={styling.logo}>
-          <img src="/images/logo-1.webp" alt="Logo" />{" "}
+          <img src="/images/kaltech perfect.svg" alt="Logo" />
+
           <img src="/images/main-menu-shape-1.webp" alt="arrow" />
         </div>
 

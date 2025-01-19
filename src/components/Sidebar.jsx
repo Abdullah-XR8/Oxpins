@@ -21,7 +21,7 @@ const Sidebar = ({ isVisible, onClose }) => {
     >
       <div className={styling.sidebarHeader}>
         <img
-          src="/images/logo-2 sidebar.webp"
+          src="/images/kaltech white svg.svg"
           alt="Logo"
           className={styling.logo}
         />

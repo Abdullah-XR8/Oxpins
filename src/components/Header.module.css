@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: #00715d;
+  /* outline: #00715d; */
 }
 
 header {
@@ -42,6 +42,7 @@ header {
   right: 1%;
   width: 8vw;
   height: auto;
+  /* color: black; */
   animation: moveBackAndForth 1.5s linear infinite alternate;
 }
 
@@ -236,7 +237,7 @@ header {
 .navbar {
   width: 78%;
   height: auto;
-  background-color: #00715d;
+  background-color: black;
   margin-top: 2%;
   border-top-left-radius: 20px;
 }
